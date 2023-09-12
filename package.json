@@ -1,0 +1,10 @@
+{
+  "name": "strapi_easypanel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RafaScripts/strapi_easypanel.git",
+  "license": "MIT",
+  "scripts": {
+    "installStrapi": "yarn create strapi-app my-project --quickstart"
+  }
+}
