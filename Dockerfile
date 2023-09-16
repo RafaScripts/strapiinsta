@@ -1,6 +1,6 @@
 FROM node:18-alpine
 # Installing libvips-dev for sharp Compatibility
-RUN apt-get update && apt-get build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev
+#RUN apt-get update
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
@@ -15,4 +15,4 @@ RUN chown -R node:node /opt/app
 USER node
 RUN ["yarn", "build"]
 EXPOSE 1337
-CMD ["yarn", "develop"]
+CMD ["yarn", "start"]
