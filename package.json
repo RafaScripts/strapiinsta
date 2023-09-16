@@ -5,6 +5,6 @@
   "repository": "https://github.com/RafaScripts/strapi_easypanel.git",
   "license": "MIT",
   "scripts": {
-    "installStrapi": "yarn create strapi-app my-project --quickstart"
+    "start": "npx create strapi-app my-project --quickstart"
   }
 }

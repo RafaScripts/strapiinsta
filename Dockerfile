@@ -11,4 +11,4 @@ RUN npm install
 # Bundle app source
 COPY . .
 EXPOSE 1337
-CMD [ "npm run", "installStrapi" ]
+CMD [ "npm", "start" ]
