@@ -6,9 +6,10 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 RUN npm install -g yarn
+RUN yarn install
 # If you are building your code for production
 # RUN npm ci --omit=dev
 # Bundle app source
 COPY . .
-EXPOSE 4000
+EXPOSE 1337
 CMD [ "yarn", "installStrapi" ]
